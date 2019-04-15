@@ -32,7 +32,7 @@ namespace portfolio_dotnet_background.Controllers
             return View();
         }
 
-         [HttpGet]
+        [HttpGet]
         public ViewResult Contact()
         {
             ViewData["Title"] =  "Krystian Tokarczyk Software/Web Developer - Contact";
@@ -52,9 +52,9 @@ namespace portfolio_dotnet_background.Controllers
                 {
                     FromAdresses = new List<EmailAdress> { FromAndToEmailAddress  },
                     ToAddresses = new List<EmailAdress> { FromAndToEmailAddress  },
-                    Content = $"Here is your message: Name: {model.Name}, " +
-                        $"Email: {model.Email}, Message: {model.Message}",
-                    Subject = "Contact Form - BasicContactForm App"
+                    Content = $"Here is your message: \rName: {model.Name}, " +
+                        $"Email: {model.Email}, \rMessage: {model.Message}",
+                    Subject = "Contact Form - This is a message from website."
                 };
 
                 EmailService.Send(msgToSend);
