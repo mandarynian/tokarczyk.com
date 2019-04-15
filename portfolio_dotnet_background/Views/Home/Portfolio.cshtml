@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        await Html.RenderPartialAsync("../Partials/_head.cshtml");
+    }
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Description"]">
+</head>
+<body>
+    <!-- Load website header. -->
+    @{
+        await Html.RenderPartialAsync("../Partials/_header.cshtml");
+    }
+
+<div class="container-fluid portfolio">
+        <h3 class="portfolio-heading secondary-color">Portfolio</h3>
+        <div class="row gallery">
+            <div class="row gallery-container" id="animated-thumbnials">
+                <a class="col-sm-12 col-md-3" href="../img/lagenda2.png">
+                   <figure class="figure gallery-figure">
+                        <img src="../img/lagenda2.png" class="figure-img img-thumbnail image-gallery" alt="...">
+                        <figcaption class="figure-caption secondary-color">Website and shop LagendaUSA.</figcaption>
+                    </figure>
+                </a>
+                <a class="col-sm-12 col-md-3" href="../img/mesdatabase.png">
+                    <figure class="figure gallery-figure">
+                        <img src="../img/mesdatabase.png" class="img-thumbnail image-gallery figure-img" alt="" srcset="">
+                        <figcaption class="figure-caption secondary-color">Desctop databse application.</figcaption>
+                    </figure>
+                </a>
+                <a class="col-sm-12 col-md-3" href="../img/rejskatamaranem.png">
+                    <figure class="figure gallery-figure">
+                        <img src="../img/rejskatamaranem.png" class="img-thumbnail image-gallery figure-img" alt="" srcset="">
+                        <figcaption class="figure-caption secondary-color">Buisnes website.</figcaption>
+                    </figure>
+                </a>
+                <a class="col-sm-12 col-md-3" href="../img/pumpprogramer.png">
+                    <figure class="figure gallery-figure">
+                        <img src="../img/pumpprogramer.png" class="img-thumbnail image-gallery figure-img" alt="" srcset="">
+                        <figcaption class="figure-caption secondary-color">Programmer for dedicated device.</figcaption>
+                    </figure>
+                </a>
+                <a class="col-sm-12 col-md-3" href="../img/magiamody.png">
+                    <figure class="figure gallery-figure">
+                        <img src="../img/magiamody.png" class="img-thumbnail image-gallery figure-img" alt="" srcset="">
+                        <figcaption class="figure-caption secondary-color">Buisnes website.</figcaption>
+                    </figure>
+                </a>
+                <a class="col-sm-12 col-md-3" href="../img/kozing.jpg">
+                    <figure class="figure gallery-figure">
+                        <img src="../img/kozing.jpg" class="img-thumbnail image-gallery figure-img" alt="" srcset="">
+                        <figcaption class="figure-caption secondary-color">Buisnes hazard game.</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    @{
+        await Html.RenderPartialAsync("../Partials/_footer.cshtml");
+    }
+</body>
+</html>

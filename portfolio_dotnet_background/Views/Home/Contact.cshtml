@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @{
+            await Html.RenderPartialAsync("../Partials/_head.cshtml");
+        }   
+        <title>@ViewData["Title"]</title>
+        <meta name="description" content="@ViewData["Description"]">
+    </head>
+    <body>
+         <!-- Load website header. -->
+        @{
+            await Html.RenderPartialAsync("../Partials/_header.cshtml");
+        }
+        <div class="container contact-form-container">
+            @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+            @model portfolio_dotnet_background.Models.ContactFormModel 
+            <h3 class="contact-form-header secondary-color">Contact form for more information about a work and cooperation.</h3>
+            <form asp-action="Contact" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <label asp-for="Name">Please enter your name:</label>
+                    <input class="form-control" type="text" asp-for="Name" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email">Please enter your email:</label>
+                    <input class="form-control" type="text" asp-for="Email" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Message">Please enter your message:</label>
+                    <textarea class="form-control" asp-for="Message"></textarea>
+                </div>
+                <input class="btn btn-secondary" type="submit" value="Send Message!" />
+            </form>
+        </div>
+        @{
+            await Html.RenderPartialAsync("../Partials/_footer.cshtml");
+        }
+    </body>
+</html>

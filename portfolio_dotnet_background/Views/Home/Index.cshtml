@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        await Html.RenderPartialAsync("../Partials/_head.cshtml");
+    }
+    <title>@ViewData["Title"]</title>
+    <meta name="description" content="@ViewData["Description"]">
+</head>
+<body>
+    <!-- Load website header. -->
+    @{
+        await Html.RenderPartialAsync("../Partials/_header.cshtml");
+    }
+    <!-- Load website content in future -->
+    <div class="base">
+        <article class="base-inforamtions">
+            <div class="container-fluid base-inforamtions-container">
+                
+                <blockquote class="col-md-12 blockquote base-informations-container-block">
+                    <p class="text-center mb-0">My name is Krystian Tokarczyk, i am living and working  in lovely city of Kraków.</p>
+                    <p class="text-center mb-0">I'm a software developer, software engineer, web developer, freelancer.</p>
+                    <p class="text-center mb-0">My code is always built by clear and <strong class="secondary-color"> SOLID </strong> principles</p>
+                    <p class="text-center">Take a look for my <a href="@Url.Action("Portfolio", "Home")" class="btn primary-link scale-link "><strong>Portfolio --></strong></a></p>
+                </blockquote>
+            </div>
+            <!--<div class="separate-border-top-2 opacity-run-animation"></div>-->
+
+            <div class="row container base-inforamtions-container">
+                <blockquote class="col-md-6 blockquote text-center">
+                    <div class="separate-border-top-1"></div>
+                    <h4 class="primary-color">Software development</h4>
+                    <p class="mb-0">I create software which is based on the best principles and patterns.</p> 
+                    <p class="mb-0">It makes my code clear and easy to review.</p>
+                </blockquote>
+                 <blockquote class="col-md-6 blockquote text-center">
+                    <div class="separate-border-top-1"></div>
+                    <h4 class="primary-color">UI design</h4>
+                    <p class="mb-0">I use semantic interface elements and create aesthetic rules for it.</p> 
+                    <p class="mb-0">I am also flexible for the client's suggestions and  happy to advise you how gain the best results.</p>
+                </blockquote>
+            </div>
+
+            <div class="container-fluid base-inforamtions-abilities">
+                
+                <div class=" container row base-inforamtions-abilities-container">
+                    <div class="col-md-12 card bg-light-color border-color-animation"> 
+                        <div class="img-header">
+                            <img src="../img/software.svg" class="card-img-top" alt="...">
+                            <h2 class="secondary-color">Software</h2>
+                        </div>
+                        <div class="card-body">
+                            <div><img class="icon" src="../img/csharp.svg" alt="csharp"><img class="icon" src="../img/dotnetsvg.svg" alt="dotnet"><span><img class="icon" src="../img/windows.svg" alt="windows"> WinForms</span><img class="icon" src="../img/cplusplus.svg" alt="cplusplus"><img class="icon" src="../img/mfc.png" alt="mfc"><img class="icon" src="../img/devexpress.svg" alt="devexpress" style="width: 12.5rem;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 card bg-light-color border-color-animation">
+                        <div class="img-header">
+                            <img src="../img/web.svg" class="card-img-top" alt="...">
+                            <h2 class="secondary-color">Web</h2>
+                        </div>
+                        <div class="card-body">
+                            <div><img class="icon" src="../img/html-5.svg" alt="html"><img class="icon" src="../img/css.svg" alt="css"><img class="icon" src="../img/sass.svg" alt="scss"> <img class="icon" src="../img/php.svg" alt="php"><img class="icon" src="../img/asp.svg" alt="aspdotnet">  <img class="icon" src="../img/javascript.svg" alt="javascript"> <span class="ui-icon ui-icon-jquery">JQuery</span>  <img class="icon" src="../img/wordpress.svg" alt="wordpress"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 card bg-light-color border-color-animation">
+                        <div class="img-header">
+                            <img src="../img/principles.svg" class="card-img-top" alt="...">
+                            <h2 class="secondary-color">Principles</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-left">SOLID, KISS, DRY, Single Responsibility, YAGNI, Clean Code, Separation of Concerns</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </article>
+    </div>
+    <!-- Load footer in future -->
+   @{
+        await Html.RenderPartialAsync("../Partials/_footer.cshtml");
+    }
+</body>
+</html>
+

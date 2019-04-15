@@ -1,0 +1,330 @@
+/* Color Theme Swatches in Hex */
+.Plitvice-Lakes-National-Park---Infrared-1-hex {
+  color: #D95560; }
+
+.Plitvice-Lakes-National-Park---Infrared-2-hex {
+  color: #F2949C; }
+
+.Plitvice-Lakes-National-Park---Infrared-3-hex {
+  color: #03738C; }
+
+.Plitvice-Lakes-National-Park---Infrared-4-hex {
+  color: #04C4D9; }
+
+.Plitvice-Lakes-National-Park---Infrared-5-hex {
+  color: #0396A6; }
+
+/* Color Theme Swatches in Hex */
+.Plitvice-Lakes-National-Park---Infrared-1-hex {
+  color: #D95560; }
+
+.Plitvice-Lakes-National-Park---Infrared-2-hex {
+  color: #F2949C; }
+
+.Plitvice-Lakes-National-Park---Infrared-3-hex {
+  color: #03738C; }
+
+.Plitvice-Lakes-National-Park---Infrared-4-hex {
+  color: #04C4D9; }
+
+.Plitvice-Lakes-National-Park---Infrared-5-hex {
+  color: #0396A6; }
+
+/* Color Theme Swatches in RGBA */
+.Plitvice-Lakes-National-Park---Infrared-1-rgba {
+  color: #d8545f; }
+
+.Plitvice-Lakes-National-Park---Infrared-2-rgba {
+  color: #f2939b; }
+
+.Plitvice-Lakes-National-Park---Infrared-3-rgba {
+  color: #02738c; }
+
+.Plitvice-Lakes-National-Park---Infrared-4-rgba {
+  color: #04c3d8; }
+
+.Plitvice-Lakes-National-Park---Infrared-5-rgba {
+  color: #0395a5; }
+
+/* Color Theme Swatches in HSLA */
+.Plitvice-Lakes-National-Park---Infrared-1-hsla {
+  color: #d85562; }
+
+.Plitvice-Lakes-National-Park---Infrared-2-hsla {
+  color: #f2929c; }
+
+.Plitvice-Lakes-National-Park---Infrared-3-hsla {
+  color: #03738c; }
+
+.Plitvice-Lakes-National-Park---Infrared-4-hsla {
+  color: #04c5d7; }
+
+.Plitvice-Lakes-National-Park---Infrared-5-hsla {
+  color: #0397a5; }
+
+body {
+  font-family: "Cuprum", sans-serif !important; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-weight: bold !important; }
+  body .primary-color {
+    color: #03738C; }
+  body .secondary-color {
+    color: #D95560; }
+  body .bg-primary-color {
+    background-color: #03738C; }
+  body .bg-secondary-color {
+    background-color: #D95560; }
+  body .bg-light-color {
+    background-color: rgba(4, 195, 216, 0.01); }
+  body a.primary-link {
+    text-decoration: none;
+    color: #D95560;
+    transition: ease-in-out 0.2s; }
+    body a.primary-link:hover {
+      color: #F2949C;
+      transition: ease-in-out 0.2s; }
+    body a.primary-link:focus, body a.primary-link:active {
+      box-shadow: none; }
+  body a.scale-link {
+    transition: ease-in-out 0.2s; }
+    body a.scale-link:hover {
+      transform: scale(1.2);
+      transition: ease-in-out 0.2s; }
+  body .page-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    opacity: .95;
+    background-color: white; }
+  body .page-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px; }
+  body .separate-border-top-1 {
+    width: 90%;
+    border-top: 1px solid #03738C;
+    margin: 10px auto;
+    align-self: center; }
+  body .separate-border-top-2 {
+    width: 90%;
+    border-top: 2px solid rgba(3, 149, 165, 0.4);
+    margin: 10px auto;
+    align-self: center; }
+  body .separate-border-bot-1 {
+    width: 90%;
+    border-bottom: 1px solid #03738C;
+    margin: 0 auto;
+    align-self: center; }
+  body .separate-border-bot-2 {
+    width: 90%;
+    border-bottom: 2px solid rgba(3, 149, 165, 0.4);
+    margin: 10px;
+    align-self: center; }
+  body .btn-secondary {
+    background-color: #D95560;
+    color: white;
+    border: 0px solid #03738C;
+    transition: ease-in-out .3s; }
+    body .btn-secondary:hover {
+      background-color: #b73340;
+      transform: scale(0.9);
+      transition: ease-in-out .3s; }
+
+body .collapse-content {
+  display: none;
+  position: fixed;
+  left: -155px;
+  background-color: #03738C; }
+  body .collapse-content.hide {
+    display: flex;
+    animation: ease-in-out hide-menu .2s; }
+  body .collapse-content.show {
+    display: flex;
+    animation: ease-in-out show-menu .2s;
+    left: 0px; }
+  body .collapse-content .bg-primary-color {
+    height: 100vh;
+    padding-top: 80px !important; }
+  body .collapse-content li {
+    padding-top: 35px; }
+    body .collapse-content li svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      align-self: center;
+      margin-right: 5px;
+      fill: white; }
+body .navbar-description {
+  align-self: baseline;
+  margin-right: 20%; }
+body .gallery {
+  justify-content: space-around; }
+body .page-heading-2 {
+  font-size: 51px; }
+body .navbar-toggler .navbar-toggler-icon {
+  transition: ease-in-out .2s; }
+  body .navbar-toggler .navbar-toggler-icon svg {
+    height: 25px;
+    fill: #03738C; }
+body .navbar-toggler:hover .navbar-toggler-icon {
+  transform: scale(1.2); }
+body .navbar-toggler.navbar-toggler-icon-scalein svg {
+  fill: white; }
+body .navbar-toggler.navbar-toggler-icon-scalein:hover .navbar-toggler-icon {
+  transform: scale(0.8); }
+body .navbar h5 {
+  margin-top: 5px; }
+body .page_header-nav_list .page_header-nav_list-item {
+  align-self: flex-start;
+  transition: padding-left ease-in .1s; }
+  body .page_header-nav_list .page_header-nav_list-item:hover {
+    padding-left: 10px;
+    transition: ease-in .3s; }
+  body .page_header-nav_list .page_header-nav_list-item a {
+    color: white;
+    text-decoration: none; }
+
+p.base-informations-p {
+  margin-bottom: 0; }
+
+.portfolio {
+  padding-top: 60px; }
+  .portfolio-heading {
+    margin: 20px 0 0 20px; }
+  .portfolio .base-informations-p-f {
+    margin-bottom: 0; }
+  .portfolio .img-thumbnail.image-gallery {
+    height: 250px;
+    cursor: pointer;
+    transition: transform ease-in-out .2s; }
+    .portfolio .img-thumbnail.image-gallery:hover {
+      transform: scale(1.2);
+      transition: transform ease-in-out .2s; }
+  .portfolio .gallery-container {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .portfolio .gallery-figure {
+    margin: 20px; }
+
+.base {
+  padding-top: 60px; }
+  .base .base-inforamtions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .base .base-inforamtions .base-inforamtions-container {
+      display: flex;
+      margin-bottom: 80px; }
+      .base .base-inforamtions .base-inforamtions-container .base-informations-container-header {
+        color: #D95560;
+        margin-top: 30px; }
+      .base .base-inforamtions .base-inforamtions-container .base-informations-container-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+        align-self: center;
+        font-size: 30px; }
+      .base .base-inforamtions .base-inforamtions-container .separate-border-top-1 {
+        width: 60%; }
+    .base .base-inforamtions .container.base-inforamtions-container {
+      align-self: center; }
+  .base .base-inforamtions-abilities {
+    display: flex;
+    justify-content: center; }
+  .base .base-inforamtions-abilities-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 35px; }
+    .base .base-inforamtions-abilities-container h2 {
+      font-weight: bold; }
+    .base .base-inforamtions-abilities-container .card {
+      width: 100%;
+      margin: 20px 0; }
+      .base .base-inforamtions-abilities-container .card .img-header {
+        display: flex;
+        flex-direction: row; }
+        .base .base-inforamtions-abilities-container .card .img-header h2 {
+          margin-left: 40px;
+          align-self: center;
+          font-size: 51px; }
+      .base .base-inforamtions-abilities-container .card p {
+        text-align: center; }
+      .base .base-inforamtions-abilities-container .card img {
+        width: 100px; }
+      .base .base-inforamtions-abilities-container .card .icon {
+        margin: 15px;
+        width: 2.5rem; }
+
+.contact-form-container {
+  padding-top: 68px; }
+  .contact-form-container .contact-form-header {
+    margin: 40px auto; }
+
+.border-color-animation {
+  border: 2px solid #03738C; }
+
+.blink {
+  animation: ease-in-out blink-caret .95s infinite;
+  white-space: nowrap;
+  border-right: 2px solid transparent; }
+
+.opacity-run-animation {
+  animation: opacity-animation 4s infinite; }
+
+.typewriter-text {
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end);
+  white-space: nowrap; }
+
+@keyframes typing {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+@keyframes scale-rotate {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: rotate(2deg); } }
+@keyframes blink-caret {
+  from, to {
+    border-color: black; }
+  50% {
+    border-color: transparent; } }
+@keyframes opacity-animation {
+  0% {
+    width: 90%;
+    border-color: rgba(3, 149, 165, 0.4); }
+  50% {
+    width: 30%;
+    border-color: #D95560; }
+  100% {
+    width: 90%; } }
+@keyframes border-color-animation {
+  from, to {
+    border-color: #03738C; }
+  50% {
+    border-color: #D95560; } }
+@keyframes show-menu {
+  from {
+    left: -155px; }
+  to {
+    left: 0px; } }
+@keyframes hide-menu {
+  from {
+    left: 0px; }
+  to {
+    left: -155px;
+    display: none; } }
+
+/*# sourceMappingURL=app.css.map */
