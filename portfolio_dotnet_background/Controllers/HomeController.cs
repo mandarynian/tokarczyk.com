@@ -43,9 +43,6 @@ namespace portfolio_dotnet_background.Controllers
         [HttpPost]
         public IActionResult Contact(ContactFormModel model)
         {
-           // ViewData["Title"] =  "Krystian Tokarczyk Software/Web Developer - Contact";
-           // ViewData["Description"]= "Contact form for more information about a work and cooperation.";
-
             if (ModelState.IsValid)
             {
                 EmailMessage msgToSend = new EmailMessage
