@@ -5,6 +5,7 @@ body {
     h1, h2, h3, h4, h5 {
         font-weight: bold !important;
     }
+
     .primary-color {
         color: $primary-color;   
     }
@@ -42,12 +43,10 @@ body {
 
     a.scale-link {
         transition: $primary-transition;
-
         &:hover {
             transform: scale(1.2);
             transition: $primary-transition;
         }
-        
     }
 
     .page-header {
@@ -65,7 +64,6 @@ body {
         height: 100px;
         margin-top: 20px;
     }  
-
     
     .separate-border-top-1 {
         width: 90%;
@@ -84,7 +82,6 @@ body {
     .separate-border-bot-1 {
         width: 90%;
         border-bottom: 1px solid $primary-color;  
-        //margin: 10px; 
         margin: 0 auto;
         align-self: center;
     }
@@ -96,12 +93,10 @@ body {
         align-self: center;
     }
 
-
     .btn-secondary {
         background-color: $link-color;
         color: white;
         border: 0px solid $primary-color;
-
         transition: ease-in-out .3s;
 
         &:hover {
@@ -114,7 +109,6 @@ body {
     .form-controler {
         display: block;
         width: 100%;
-        height: calc(1.5em + .75rem + 2px);
         padding: .375rem .75rem;
         font-size: 1rem;
         font-weight: 400;
@@ -128,14 +122,18 @@ body {
 
         &:focus {
             transition: ease-in-out .2s;
-            box-shadow: 0px 0px 8px 4px $secondary-color !important;
+            box-shadow: 0px 0px 8px 1px $secondary-color;
         }
     }
 
-    textarea.form-controler {
-        min-height: 80px;
+    input.form-controler
+    {
+        height: calc(1.5em + .75rem + 2px);
     }
 
+    textarea.form-controler {
+        height: calc(3.5em + 1.75rem + 2px);
+    }
 }
 
 // custom
@@ -176,19 +174,6 @@ body {
         }
     }
 
-    .navbar-description {
-        align-self: baseline;
-        margin-right: 20%;
-    }
-
-    .gallery {
-        justify-content: space-around;
-    }
-
-    .page-heading-2 {
-        font-size: 51px;
-    }
-    
     .navbar-toggler {
 
         .navbar-toggler-icon {
@@ -205,7 +190,7 @@ body {
             }
         }
     }
-        
+
     .navbar-toggler.navbar-toggler-icon-scalein {
         svg {
             fill: white;
@@ -222,6 +207,23 @@ body {
             margin-top: 5px;
         }
     }
+
+    .navbar-description {
+        align-self: baseline;
+        margin-right: 20%;
+    }
+
+    .gallery {
+        justify-content: space-around;
+    }
+
+    .page-heading-2 {
+        font-size: 51px;
+    }
+    
+  
+        
+   
 
 
     .page_header-nav_list {
