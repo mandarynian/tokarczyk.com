@@ -220,11 +220,6 @@ body {
     .page-heading-2 {
         font-size: 51px;
     }
-    
-  
-        
-   
-
 
     .page_header-nav_list {
         .page_header-nav_list-item {
@@ -244,9 +239,6 @@ body {
     }
 
 }
-
-
-
 
 p.base-informations-p
 {
@@ -272,8 +264,8 @@ p.base-informations-p
         cursor: pointer;
         transition: transform ease-in-out .2s;
         &:hover {
-           transform: scale(1.2);
-           transition: transform ease-in-out .2s;
+           transform: scale(1.1);
+           transition: transform ease-in-out .4s;
         }
     }
 
@@ -283,9 +275,52 @@ p.base-informations-p
         text-align: center;
     }
 
+    
+    .gallery-preview {
+        display: none;
+        position: absolute;
+        z-index: 1001;
+        background-color: rgba(0,0,0,0.75);
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+
+        img {
+            margin: auto;
+            transform: scale(0.5);
+        }
+
+        &.show {
+            display: flex;
+            img {
+                animation: ease-in-out scale-gallery-preview .4s;
+                transform: scale(1);
+            }
+        }
+
+    }
+
     .gallery-figure
     {
+        overflow: hidden;
         margin: 20px;
+        
+        .figure-caption {
+            position: relative;
+            font-weight: bold;
+            font-size: 22px;
+            //animation: ease-in-out reset-bottom-aditional-pixels .3s;
+            bottom: -50px;
+
+        }
+
+        &:hover {
+            .figure-caption  {
+                animation: ease-in-out add-bottom-pixels .3s;
+                bottom: $figure-additional-bottom-pixels;
+            }
+        }
     }
 
 }
@@ -462,4 +497,20 @@ from, to { border-color: black; }
 @keyframes hide-menu {
     from { left: 0px; }
     to {left: -155px; display: none; }
+}
+
+@keyframes add-bottom-pixels {
+    from { bottom: -50px; }
+    to { bottom: $figure-additional-bottom-pixels; }
+}
+
+
+@keyframes reset-bottom-aditional-pixels {
+    from { bottom: $figure-additional-bottom-pixels }
+    to { bottom: -50px; }
+}
+
+@keyframes scale-gallery-preview {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
 }

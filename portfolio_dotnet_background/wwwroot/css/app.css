@@ -219,14 +219,40 @@ p.base-informations-p {
     cursor: pointer;
     transition: transform ease-in-out .2s; }
     .portfolio .img-thumbnail.image-gallery:hover {
-      transform: scale(1.2);
-      transition: transform ease-in-out .2s; }
+      transform: scale(1.1);
+      transition: transform ease-in-out .4s; }
   .portfolio .gallery-container {
     display: flex;
     justify-content: center;
     text-align: center; }
+  .portfolio .gallery-preview {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px; }
+    .portfolio .gallery-preview img {
+      margin: auto;
+      transform: scale(0.5); }
+    .portfolio .gallery-preview.show {
+      display: flex; }
+      .portfolio .gallery-preview.show img {
+        animation: ease-in-out scale-gallery-preview .4s;
+        transform: scale(1); }
   .portfolio .gallery-figure {
+    overflow: hidden;
     margin: 20px; }
+    .portfolio .gallery-figure .figure-caption {
+      position: relative;
+      font-weight: bold;
+      font-size: 22px;
+      bottom: -50px; }
+    .portfolio .gallery-figure:hover .figure-caption {
+      animation: ease-in-out add-bottom-pixels .3s;
+      bottom: 50px; }
 
 .base {
   padding-top: 60px; }
@@ -346,5 +372,20 @@ p.base-informations-p {
   to {
     left: -155px;
     display: none; } }
+@keyframes add-bottom-pixels {
+  from {
+    bottom: -50px; }
+  to {
+    bottom: 50px; } }
+@keyframes reset-bottom-aditional-pixels {
+  from {
+    bottom: 50px; }
+  to {
+    bottom: -50px; } }
+@keyframes scale-gallery-preview {
+  from {
+    transform: scale(0.5); }
+  to {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=app.css.map */

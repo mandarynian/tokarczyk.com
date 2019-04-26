@@ -1,9 +1,10 @@
 $( document ).ready( () => {
-
+  Gallery();
   NavBarButtonScale();
   $( window ).resize( () => {
     AutoPaddingContent();
   });
+  CheckForEscPress();
 });
 
 // To scale navbar button icon.
@@ -35,3 +36,26 @@ var AutoPaddingContent = () => {
     $("div.contact-form-container").css('padding-top', headerHeight);
   });
 };
+
+// Collection for Portfolio gallery method.
+var Gallery = () => {
+  $(".gallery-link").click( (e) => {
+    e.preventDefault();
+    var url = e.currentTarget.attributes.href.nodeValue;
+    LoadImage($("section.gallery-preview"), url);
+  });
+};
+
+var LoadImage = (e, u) => {
+  $(e).empty().html($("<img>").attr("src", u));
+  $(e).addClass("show");
+};
+
+var CheckForEscPress = () => {
+  $(document).keyup( (e) => {
+    if (e.keyCode === 27) 
+      $("section.gallery-preview").removeClass("show");
+  });
+};
+
+// <---
